@@ -6,7 +6,9 @@ import { StyleSheet } from 'react-native'
 import Stories from '../components/home/Stories'
 import Posts from '../components/home/Posts'
 import { ScrollView } from 'react-native'
-import POSTS from '../../../data/POSTS'
+import {POSTS} from "../data/POSTS"
+import BottomTab from '../components/home/BottomTab'
+
 
 const HomeScreen= () => {
   return (
@@ -18,6 +20,7 @@ const HomeScreen= () => {
           <Posts post={post} key={index} />
         ))}
       </ScrollView>
+      <BottomTab/>
     </SafeAreaView>
   )
 }
